@@ -7,7 +7,7 @@ function textChange() {
 }
 const Previous = () => {
   document.getElementById("h1").innerText = "Dom spacial event";
-}
+};
 const greenBtn = document.getElementById("makeGreen");
 
 greenBtn.onclick = makeGreen;
@@ -39,4 +39,19 @@ document.getElementById("Update").addEventListener("click", () => {
   document.getElementById("updateText").innerText = input;
 
   document.getElementById("input").value = "";
+});
+
+// add comments
+
+document.getElementById("postBtn").addEventListener("click", () => {
+  const input = document.getElementById("comment").value;
+
+  const container = document.getElementById("parent");
+
+  const p = document.createElement("p");
+  p.innerText = input;
+
+  container.appendChild(p);
+
+  document.getElementById("comment").value = "";
 });
