@@ -14,11 +14,17 @@
         <h1 id="h1" class=" text-4xl font-semibold text-center py-6 ">Dom spacial event</h1>
         <button class="btn" id="makeRed"> make red</button>
         <button class="btn" onclick="textChange()"> Click me</button>
-        <button class="btn" onclick="textChange2()"> Previous</button>
+        <button class="btn" onclick="Previous()"> Previous</button>
         <button class="btn" onclick="document.body.style.backgroundColor = 'yellow', h1.style.color = 'black'"> make
             yellow</button>
         <button class="btn" id="makeGreen"> make green</button>
         <button class="btn" id="makeYellow"> make blue</button>
+    </div>\
+
+    <div class="p-5 text-center w-1/2 mx-auto space-y-4">
+        <h1 class="text-3xl font-semibold mb-3" id="updateText">Updatable text</h1>
+        <input type="text" placeholder="Enter text" class=" input bg-slate-300 block mx-auto" id="input">
+        <button type="submit" id="Update" class="btn"> Update</button>
     </div>
 
     <script src="script.js"></script>
