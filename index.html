@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dom</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class=" h-screen">
+    <div>
+        <h1 id="h1" class=" text-4xl font-semibold text-center py-6 ">Dom spacial event</h1>
+        <button class="btn" id="makeRed"> make red</button>
+        <button class="btn" onclick="textChange()"> Click me</button>
+        <button class="btn" onclick="textChange2()"> Previous</button>
+        <button class="btn" onclick="document.body.style.backgroundColor = 'yellow', h1.style.color = 'black'"> make
+            yellow</button>
+        <button class="btn" id="makeGreen"> make green</button>
+        <button class="btn" id="makeYellow"> make blue</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
